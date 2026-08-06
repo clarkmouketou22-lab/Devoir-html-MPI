@@ -2,8 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Devoir DevOps</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Devoir DevOps</title
 </head>
 <body>
     <div class="container">
@@ -14,5 +13,52 @@
         J'apprends à créer des dépôts et à déployer une page web avec GitHub Pages.</p>
         <p class="citation"><b>"Je découvre le DevOps avec Git et GitHub."</b></p>
     </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoir Introduction au DevOps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Devoir Introduction au DevOps</h1>
+        <h2>Clark Mouketou</h2>
+        <p><b>Nom et Prénoms :</b> Clark Mouketou | <b>Filière :</b> MPI | <b>Niveau :</b> L1 | <b>Université :</b> Université Numérique du Gabon</p>
+        
+        <div class="langues">
+            <button onclick="changerLangue('fr')">Français</button>
+            <button onclick="changerLangue('en')">English</button>
+            <button onclick="changerLangue('es')">Español</button>
+            <button onclick="changerLangue('pt')">Português</button>
+            <button onclick="changerLangue('de')">Deutsch</button>
+        </div>
+
+        <h3>1. Définition du DevOps</h3>
+        <p id="def-devops">Le DevOps est une culture et un ensemble de pratiques qui visent à unir le développement logiciel (Dev) et l'exploitation informatique (Ops). L'objectif est d'automatiser et d'accélérer la livraison des applications pour avoir plus de qualité et de rapidité.</p>
+
+        <h3>2. Commandes Git utilisées</h3>
+        <ul>
+            <li><b>git add .</b> : Prépare tous les fichiers pour le commit</li>
+            <li><b>git commit -m "message"</b> : Enregistre les modifications localement</li>
+            <li><b>git push</b> : Envoie les modifications sur GitHub</li>
+        </ul>
+
+        <p class="citation"><i>"Je découvre le DevOps avec Git et GitHub."</i></p>
+    </div>
+
+    <script>
+        function changerLangue(lang) {
+            const def = document.getElementById('def-devops');
+            if(lang === 'en') def.innerText = "DevOps is a culture and set of practices that aim to unite software development (Dev) and IT operations (Ops).";
+            if(lang === 'es') def.innerText = "DevOps es una cultura y conjunto de prácticas que buscan unir el desarrollo de software (Dev) y las operaciones de TI (Ops).";
+            if(lang === 'pt') def.innerText = "DevOps é uma cultura e conjunto de práticas que visam unir o desenvolvimento de software (Dev) e as operações de TI (Ops).";
+            if(lang === 'de') def.innerText = "DevOps ist eine Kultur und eine Reihe von Praktiken, die darauf abzielen, Softwareentwicklung (Dev) und IT-Betrieb (Ops) zu vereinen.";
+            if(lang === 'fr') def.innerText = "Le DevOps est une culture et un ensemble de pratiques qui visent à unir le développement logiciel (Dev) et l'exploitation informatique (Ops). L'objectif est d'automatiser et d'accélérer la livraison des applications pour avoir plus de qualité et de rapidité.";
+        }
+    </script>
 </body>
 </html>
